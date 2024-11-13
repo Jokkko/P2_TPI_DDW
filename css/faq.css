@@ -1,31 +1,30 @@
-body {
-    background-color: #0F0F11; 
-    color: #00FF12;
-    font-family: 'Lato', sans-serif;
-}
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 .navbar {
     background-color: #000000;
 }
-.navbar a {
-    color: #00FF12 !important;
+.header{
+    color: var(--primary-color);
 }
+.navbar a {
+    color: var(--primary-color) !important;
+}
+
 h1 {
-    color: #00FF12;
+    color: var(--primary-color);
     font-size: 2.3em;
     margin-bottom: 10%;
 }
 .card-title {
     font-weight: bold;
-    color: #FE3D3D;
+    color: var(--secondary-color);
     text-align: center;
     margin: 5% 0;
 }
 em {
     font-weight: bold;
-    color: #FE3D3D;
+    color: var(--secondary-color);
     font-style: normal;
 }
 #nosotros {
@@ -36,10 +35,10 @@ em {
     height: 30%;
 }
 p {
-    color: #F2CB40;
+    color: var(--third-color);
 }
 .card-text {
-    color: #F2CB40;
+    color: var(--third-color);
     font-size: 1.2em;
 }
 .custom-carousel-img {
@@ -153,7 +152,7 @@ ul {
 
 .accordion-button {
     font-size: 1.2em;
-    color: #00FF12 !important;
+    color: var(--primary-color) !important;
     margin-left: auto;
 }
 
@@ -161,7 +160,7 @@ ul {
     font-size: 1.2em;
     margin-left: auto;
     background-color: transparent !important;
-    color: #FE3D3D !important;  
+    color: var(--third-color) !important;  
     transition: all 0.5s;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FE3D3D' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
 }
@@ -172,7 +171,7 @@ ul {
 
 .accordion-body {
     background-color: transparent;
-    color: #F2CB40;
+    color: var(--secondary-color);
     padding: 1rem;
     font-size: 1.1em;
 }
@@ -189,7 +188,7 @@ ul {
 
 /* FOOTER - CAMBIAR POR GENERAL DEL PROYECTO */
 .footer {
-    color: #fff;
+    color: #f0f0f0;
     padding: 20px 0;
     font-family: Arial, sans-serif;
 }
@@ -214,13 +213,13 @@ ul {
 }
 
 .footer p, .footer a {
-    color: #ddd;
+    color: #f0f0f0;
     font-size: 0.9em;
     text-decoration: none;
 }
 
 .footer a:hover {
-    color: #fff;
+    color: #f0f0f0;
     text-decoration: underline;
 }
 

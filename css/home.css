@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-custom {
+    background-color: #010f18;
+    padding: 1rem;
+}
+
+.navbar-custom .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
+    min-height: 4rem;
+    max-width: none;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav a {
+    color: #f2cb40;
+    text-decoration: none;
+    margin-right: 1.5rem;
+}
+
+.navbar-nav a:hover {
+    color: #00ff11;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    text-decoration: none;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+}
+
+.navbar-brand .burger-text {
+    font-weight: lighter;
+    color: #f2cb40;
+}
+
+.navbar-brand .lab-text {
+    font-weight: bold;
+    color: #00ff11;
+}
+
