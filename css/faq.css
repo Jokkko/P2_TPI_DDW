@@ -1,31 +1,23 @@
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
-}
-.navbar {
-    background-color: #000000;
-}
-.header{
-    color: var(--primary-color);
-}
-.navbar a {
-    color: var(--primary-color) !important;
+h1 {
+  color: var(--primary-color);
+  font-size: 2.3em;
+  margin-bottom: 10%;
 }
 
-h1 {
-    color: var(--primary-color);
-    font-size: 2.3em;
-    margin-bottom: 10%;
+.header {
+  color: var(--primary-color);
 }
+
 .card-title {
-    font-weight: bold;
-    color: var(--secondary-color);
-    text-align: center;
-    margin: 5% 0;
+  font-weight: bold;
+  color: var(--secondary-color);
+  text-align: center;
+  margin: 5% 0;
 }
 em {
-    font-weight: bold;
-    color: var(--secondary-color);
-    font-style: normal;
+  font-weight: bold;
+  color: var(--secondary-color);
+  font-style: normal;
 }
 #nosotros {
   padding: 2%;
@@ -35,11 +27,11 @@ em {
   height: 30%;
 }
 p {
-    color: var(--third-color);
+  color: var(--third-color);
 }
 .card-text {
-    color: var(--third-color);
-    font-size: 1.2em;
+  color: var(--third-color);
+  font-size: 1.2em;
 }
 .custom-carousel-img {
   width: 100%;
@@ -150,29 +142,32 @@ ul {
 }
 
 .accordion-button {
-    font-size: 1.2em;
-    color: var(--primary-color) !important;
-    margin-left: auto;
+  font-size: 1.2em;
+  color: var(--primary-color) !important;
+  margin-left: auto;
 }
 
 .accordion-button::after {
-    font-size: 1.2em;
-    margin-left: auto;
-    background-color: transparent !important;
-    color: var(--third-color) !important;  
-    transition: all 0.5s;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FE3D3D' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+  font-size: 1.2em;
+  margin-left: auto;
+  background-color: transparent !important;
+  color: var(--third-color) !important;
+  transition: all 0.5s;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FE3D3D' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
 }
 
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23FE3D3D' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
 }
 
 .accordion-body {
-    background-color: transparent;
-    color: var(--secondary-color);
-    padding: 1rem;
-    font-size: 1.1em;
+  background-color: transparent;
+  color: var(--secondary-color);
+  padding: 1rem;
+  font-size: 1.1em;
 }
 
 .accordion-header {
@@ -181,66 +176,4 @@ ul {
 
 ul {
   list-style: none;
-}
-
-/* FOOTER - CAMBIAR POR GENERAL DEL PROYECTO */
-.footer {
-    color: #f0f0f0;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.footer-about,
-.footer-links,
-.footer-social {
-  flex: 1;
-  margin: 10px;
-}
-
-.footer h3 {
-  font-size: 1.2em;
-  margin-bottom: 10px;
-}
-
-.footer p, .footer a {
-    color: #f0f0f0;
-    font-size: 0.9em;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    color: #f0f0f0;
-    text-decoration: underline;
-}
-
-.footer-links ul,
-.footer-social ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links li,
-.footer-social li {
-  margin-bottom: 8px;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 10px 0;
-  border-top: 1px solid #444;
-  font-size: 0.8em;
-  color: #bbb;
-}
-
-.footer-bottom p {
-  margin: 0;
 }

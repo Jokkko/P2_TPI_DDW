@@ -9,19 +9,10 @@ function renderNavbar() {
             <a href="#link4">Conocenos</a>
           </div>
           <a class="navbar-brand" href="#">
-            <img src="./logo-chico.png" alt="Logo" style="height: 50px" />
+            <img src="./img/logo-chico.png" alt="Logo" style="height: 50px" />
             <span class="burger-text">Burger</span>
             <span class="lab-text">Lab</span>
           </a>
-          <form class="d-flex lg" role="search">
-            <input
-              class="form-control sm-2"
-              type="search"
-              placeholder="Buscar 🔍"
-              aria-label="Search"
-              style="text-align: right"
-            />
-          </form>
         </div>
       </nav>
     `;

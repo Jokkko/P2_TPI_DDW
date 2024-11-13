@@ -1,51 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-.navbar-custom {
-    background-color: #010f18;
-    padding: 1rem;
-}
-
-.navbar-custom .container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    width: 100%;
-    min-height: 4rem;
-    max-width: none;
+#reserva-ahora{
+    height: 25rem;
+    padding: 5rem;
+    background-color: var(--bg-color);
+    margin: 1rem;
+    border: 1px solid var(--secondary-color);
 }
 
-.navbar-nav {
-    display: flex;
-    align-items: center;
-}
-
-.navbar-nav a {
-    color: #f2cb40;
-    text-decoration: none;
-    margin-right: 1.5rem;
-}
-
-.navbar-nav a:hover {
-    color: #00ff11;
-}
-
-.navbar-brand {
-    position: absolute;
-    left: 50%;
-    text-decoration: none;
-    transform: translateX(-50%);
-    font-size: 1.5rem;
-}
-
-.navbar-brand .burger-text {
-    font-weight: lighter;
-    color: #f2cb40;
-}
-
-.navbar-brand .lab-text {
+#reserva-ahora h2{
     font-weight: bold;
-    color: #00ff11;
+    color: var(--primary-color);
 }
-
