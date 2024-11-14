@@ -25,6 +25,10 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+.marca{
+  display: none;
+}
+
 .navbar-custom {
   background-color: #000;
   padding: 1rem 0;
