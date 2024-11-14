@@ -3,7 +3,7 @@ function renderFooter() {
        <div class="footer-first-row">
         <img src="./img/logo-chico.png" alt="Logo" style="height: 70px" />
         <div class="footer-links">
-          <a href="#">Reserva</a>
+          <a href="../ordena_pedido.html">Reserva</a>
           <a href="../menu.html">Mira nuestro Menu</a>
           <a href="../faq.html">FAQ</a>
           <a href="#">Boton de arrepentimiento</a>
