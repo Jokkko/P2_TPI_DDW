@@ -1,12 +1,89 @@
-#reserva-ahora{
-    height: 25rem;
-    padding: 5rem;
+.cta-reserva {
+    padding: 1rem;
     background-color: var(--bg-color);
     margin: 1rem;
     border: 1px solid var(--secondary-color);
 }
 
-#reserva-ahora h2{
+.cta-reserva h2 {
     font-weight: bold;
+    font-size: 3rem;
     color: var(--primary-color);
+}
+
+.cta-reserva .card-body {
+    background-color: var(--bg-color);
+    
+}
+.cta-reserva .card {
+    background-color: var(--bg-color);
+    border: none;
+}
+
+
+.cta-reserva p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.reserva-content {
+    padding: .5rem;
+    margin: auto;
+}
+
+/* Sección de Sucursales */
+.sucursales {
+    margin: 3rem 1rem 1rem 1rem;
+}
+
+.sucursales .card {
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--third-color);
+}
+
+.sucursales .card-text {
+    color: var(--secondary-color);
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    padding: 0 6rem;
+}
+
+.sucursales .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.localidad {
+    color: var(--third-color);
+}
+
+/* Sección de Testimonios */
+.testimonios {
+    margin: 3rem 1rem 5rem 1rem;   
+}
+
+.testimonios .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    padding: 1rem;
+    background-color: var(--bg-color);
+    border: 1px solid var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.testimonios cite.nombre {
+    color: var(--third-color);
+}
+
+.testimonios blockquote {
+    padding: 2rem 2rem 0rem 2rem;
+    margin: 0; /* Reset del margin por defecto de blockquote */
 }
