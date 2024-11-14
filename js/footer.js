@@ -5,7 +5,7 @@ function renderFooter() {
         <div class="footer-links">
           <a href="#">Reserva</a>
           <a href="#">Mira nuestro Menu</a>
-          <a href="#">Sucursales</a>
+          <a href="#">FAQ</a>
           <a href="#">Boton de arrepentimiento</a>
         </div>
         <div class="footer-social">
