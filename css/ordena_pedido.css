@@ -1,0 +1,499 @@
+/* Estilos generales */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #010F18;
+    color: #00FF12;
+  }
+  
+  
+  /* Navbar */
+  .navbar {
+    background-color: #010F18 !important;
+    border-bottom: 2px solid #F2CB40;
+  }
+  
+  .navbar-brand {
+    color: #F2CB40 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+  
+  /* Formularios */
+  .form-select, .form-control {
+    background-color: #010F18;
+    border: 2px solid #F2CB40;
+    color: #F2CB40;
+    padding: 12px;
+  }
+  
+  .form-select:focus, .form-control:focus {
+    background-color: #010F18;
+    border-color: #F2CB40;
+    box-shadow: 0 0 0 0.25rem rgba(242, 203, 64, 0.25);
+    color: #00FF12;
+  }
+  
+  .form-select:hover, .form-control:hover {
+    border-color: #00FF12;
+  }
+  
+  /* Card de resumen */
+  .card {
+    background-color: #010F18;
+    border: 2px solid #F2CB40;
+    box-shadow: 0 0 15px rgba(242, 203, 64, 0.1);
+  }
+  
+  .card h5, .card-title {
+    color: #F2CB40 !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-bottom: 2px solid #FF3D3D;
+    padding-bottom: 10px;
+  }
+  
+  /* Resaltado de información importante */
+
+  .horario{
+    color: #FF3D3D
+  }
+  
+  #tiempo {
+    color: #F2CB40;
+    font-weight: bold;
+  }
+  
+  /* Botones */
+  .btn-primary {
+    background-color: #00FF12;
+    border-color: #00FF12;
+    color: #010F18;
+    font-weight: bold;
+    padding: 12px 24px;
+  }
+  
+  .btn-primary:hover {
+    background-color: #F2CB40;
+    border-color: #F2CB40;
+    transform: translateY(-2px);
+  }
+  
+  .btn-secondary {
+    background-color: transparent;
+    border: 2px solid #FF3D3D;
+    color: #FF3D3D;
+    font-weight: bold;
+    padding: 12px 24px;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #FF3D3D;
+    color: #010F18;
+    transform: translateY(-2px);
+  }
+  
+  /* Detalles del resumen */
+  .card p {
+    color: #F2CB40;
+    border-left: 3px solid #00FF12;
+    padding-left: 10px;
+    margin: 10px 0;
+  }
+  
+  #hamburguesa, #extras, #side, #bebida, #sucursal, 
+  #direccion, #entrega, #pago, #tiempo {
+    color: #F2CB40;
+    font-weight: 500;
+  }
+  
+
+  
+  /* Scrollbar personalizado */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #010F18;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #00FF12;
+    border-radius: 4px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #F2CB40;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .card {
+      margin: 10px;
+    }
+    
+    .btn {
+      margin: 5px 0;
+    }
+  }
+  
+  /* Animaciones */
+  .card, .btn, .form-select, .form-control {
+    transition: all 0.3s ease;
+  }
+  
+  /* Texto "Precio Total" */
+  .card h4, #precio {
+    color: #F2CB40;
+    font-weight: bold;
+  }
+  
+  #precio {
+    font-size: 1.5em;
+  }
+  
+  .form-select option:not(:first-child) {
+    color: #00FF12;
+    background-color: #010F18;
+  }
+  
+  .form-select option:first-child {
+    color: #F2CB40;
+  }
+  
+  /* Para cambiar el color del texto seleccionado */
+  .form-select:has(option:not(:first-child):checked) {
+    color: #00FF12;
+  }
+
+  .navbar-custom {
+    background-color: #010f18;
+    padding: 1rem;
+  }
+
+  .navbar-custom .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    width: 100%;
+    max-width: none;
+    position: relative;
+  }
+
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-nav a {
+    color: #f2cb40;
+    text-decoration: none;
+    margin-right: 1.5rem;
+  }
+
+  .navbar-nav a:hover {
+    color: #00ff11;
+  }
+
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand .burger-text {
+    font-weight: lighter;
+    color: #f2cb40;
+  }
+
+  .navbar-brand .lab-text {
+    font-weight: bold;
+    color: #00ff11;
+  }
+
+  .navbar-nav,
+  form.d-flex {
+    flex: 0 0 auto;
+    z-index: 1;
+  }
+
+  .form-control {
+    background-color: transparent;
+    border: 1px solid #f2cb40;
+    color: #f2cb40;
+  }
+
+  .form-control::placeholder {
+    color: #f2cb40;
+    opacity: 0.7;
+  }
+
+  .form-control:focus {
+    background-color: transparent;
+    border-color: #00ff11;
+    color: #f2cb40;
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 17, 0.25);
+    margin: 0;
+  }
+  .form-control:focus::placeholder {
+    opacity: 0;
+  }
+
+  /* Estilos para los spans del resumen */
+  #hamburguesa, #extras, #side, #bebida, #sucursal, 
+  #direccion, #entrega, #pago {
+    color: #00FF12;
+    margin-left: 5px;
+  }
+
+  /* Estilos para los selects */
+  .form-select option:not(:first-child) {
+    color: #00FF12;
+    background-color: #010F18;
+  }
+
+  .form-select option:first-child {
+    color: #F2CB40;
+  }
+
+ 
+
+
+  /* Control de cantidad */
+  .cantidad-control {
+    display: flex;
+    width: 120px;
+  }
+
+  .btn-cantidad {
+    background-color: transparent;
+    border: 2px solid #F2CB40;
+    color: #F2CB40;
+    padding: 0.25rem 0.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .btn-cantidad:hover {
+    background-color: #F2CB40;
+    color: #010F18;
+  }
+
+  .cantidad-input {
+    width: 60px;
+    text-align: center;
+    margin: 0 -1px;
+    padding: 0.25rem;
+  }
+
+  /* Header de hamburguesas */
+  .hamburguesas-header {
+    background-color: #010F18;
+    color: #F2CB40;
+    border: 2px solid #F2CB40;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Agregar estos estilos */
+  .hamburguesas-section {
+    margin-bottom: 2rem;
+  }
+
+  .hamburguesas-title {
+    background-color: #F2CB40;
+    color: #010F18;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hamburguesas-grid {
+    display: grid;
+    gap: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .hamburguesa-card {
+    background-color: #010F18;
+    border: 2px solid #F2CB40;
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .hamburguesa-info h3 {
+    color: #F2CB40;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .hamburguesa-info .descripcion {
+    color: #F2CB40;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-bottom: 0.4rem;
+  }
+
+  .hamburguesa-info .precio {
+    color: #00FF12;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0;
+  }
+
+  .hamburguesa-controls {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.8rem;
+  }
+
+  .hamburguesa-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+  }
+
+  .cantidad-control {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .btn-cantidad {
+    background-color: transparent;
+    border: 2px solid #F2CB40;
+    color: #F2CB40;
+    width: 30px;
+    height: 30px;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-cantidad:hover {
+    background-color: #F2CB40;
+    color: #010F18;
+  }
+
+  .cantidad-input {
+    width: 50px;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #F2CB40;
+    color: #F2CB40;
+    border-radius: 0.25rem;
+    padding: 0.25rem;
+  }
+
+  /* Estado activo cuando hay items seleccionados */
+  .hamburguesa-card.active {
+    border-color: #00FF12;
+    background-color: rgba(0, 255, 18, 0.1);
+  }
+
+  .hamburguesa-card.active .hamburguesa-info h3 {
+    color: #00FF12;
+  }
+
+  .nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .nav-list li {
+    display: inline-block;
+  }
+
+  .nav-list a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Quita las flechitas para todos los navegadores */
+  .cantidad-input::-webkit-outer-spin-button,
+  .cantidad-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  .sucursal-card {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+  }
+
+  .sucursal-radio {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  /* Estilo para tarjetas activas */
+  .sucursal-card:has(.sucursal-radio:checked) {
+    background-color: transparent;
+    border-color: #00FF12;
+    background-color: rgba(0, 255, 18, 0.1);
+    margin: 0;
+  }
+
+  /* Efecto hover */
+  .sucursal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .entrega-radio {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .entrega-card:has(.entrega-radio:checked) {
+    background-color: transparent;
+    border-color: #00FF12;
+    background-color: rgba(0, 255, 18, 0.1);
+    margin: 0;
+  }
+
+  /* Efecto hover */
+  .entrega-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .pago-radio {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    margin: 0;
+    opacity: 0;
+  }
+  .pago-card:has(.pago-radio:checked) {
+    background-color: transparent;
+    border-color: #00FF12;
+    background-color: rgba(0, 255, 18, 0.1);
+    margin: 0;
+  }
+
+  /* Efecto hover */
+  .pago-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
