@@ -4,11 +4,11 @@ function renderNavbar() {
         <div class="container">
           <div class="navbar-nav">
             <a href="#link1">Reservá tu pedido</a>
-            <a href="#link2">Menú</a>
+            <a href="../menu.html">Menú</a>
             <a href="#link3">Sucursales</a>
-            <a href="#link4">Conocenos</a>
+            <a href="../faq.html">Conocenos</a>
           </div>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="../home.html">
             <img src="./img/logo-chico.png" alt="Logo" style="height: 50px" />
             <span class="burger-text">Burger</span>
             <span class="lab-text">Lab</span>
