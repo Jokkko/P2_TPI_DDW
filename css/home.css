@@ -1,0 +1,12 @@
+#reserva-ahora{
+    height: 25rem;
+    padding: 5rem;
+    background-color: var(--bg-color);
+    margin: 1rem;
+    border: 1px solid var(--secondary-color);
+}
+
+#reserva-ahora h2{
+    font-weight: bold;
+    color: var(--primary-color);
+}
