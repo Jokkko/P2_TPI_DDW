@@ -20,6 +20,9 @@ function renderFooter() {
         <a href="#">Politicas de privacidad</a> |
         <a href="#">Terminos del servicio</a>
       </p>
+      <p class="footer-copy">
+        Creado por <span class="span-creadores">Joaquin Fernandes, Ignacio Ramirez, Guido Contartese, Lucas Vitale y Andrea </span>
+      </p>
       `;
   
     document.querySelector("#footer").innerHTML = footerHTML;
