@@ -19,340 +19,344 @@
         <div class="container my-4">
         <form>
             <!-- Dropdowns -->
-            <div class="row mb-3">
-            <div class="col-md-6">
-                <div class="hamburguesas-section mb-3"> <!-- Contenedor de sucursales -->
-                    <h2 class="hamburguesas-title">Sucursales</h2>
+             <section>
+                <div class="row mb-3">
+                    <div class="col-md-6">
+                        <div class="hamburguesas-section mb-3"> <!-- Contenedor de sucursales -->
+                            <h2 class="hamburguesas-title">Sucursales</h2>
+                            
+                            <div class="hamburguesas-grid"> 
+                                <!-- Hamburguesa Card -->
+                                <label class="hamburguesa-card sucursal-card">
+                                    <input type="radio" name="sucursal" class="sucursal-radio" value="Titanio 22" data-direccion="Av. Santa Fe 3200, CABA">
+                                    <div class="hamburguesa-info">
+                                        <h3>Titanio 22.</h3>
+                                        <p>Av. Santa Fe 3200, CABA.</p>
+                                        <p class="horario">Horario: 10:00 - 23:00</p>
+                                        <p>Take Away y delivery.</p>
+                                    </div>
+                                </label>
+                                <label class="hamburguesa-card sucursal-card">
+                                    <input type="radio" name="sucursal" class="sucursal-radio" value="Potasio 19" data-direccion="Av. Córdoba 4500 - CABA">
+                                    <div class="hamburguesa-info">
+                                        <h3>Potasio 19.</h3>
+                                        <p>Av. Córdoba 4500 - CABA</p>
+                                        <p class="horario">Horario: 10:00 - 23:00</p>
+                                        <p>Take Away y delivery.</p>
+                                    </div>
+                                </label>
+                                <label class="hamburguesa-card sucursal-card">
+                                    <input type="radio" name="sucursal" class="sucursal-radio" value="Cesio 55" data-direccion="Av. Santa Fe 3200, CABA">
+                                    <div class="hamburguesa-info">
+                                        <h3>Cesio 55.</h3>
+                                        <p>Av. Corrientes 1455, CABA.</p>
+                                        <p class="horario">Horario: 10:00 - 14:00 y 17:00 - 23:00</p>
+                                        <p>Take Away y delivery.</p>
+                                    </div>
+                                </label>
+                                <label class="hamburguesa-card sucursal-card">
+                                    <input type="radio" name="sucursal" class="sucursal-radio" value="Francio 87" data-direccion="Av. Espora 1303 - Adrogué">
+                                    <div class="hamburguesa-info">
+                                        <h3>Francio 87.</h3>
+                                        <p>Av. Espora 1303 - Adrogué</p>
+                                        <p class="horario">Horario: 20:00 - 01:00</p>
+                                        <p>Take Away y delivery.</p>
+                                    </div>
+                                </label>
                     
-                    <div class="hamburguesas-grid"> 
-                        <!-- Hamburguesa Card -->
-                        <label class="hamburguesa-card sucursal-card">
-                            <input type="radio" name="sucursal" class="sucursal-radio" value="Titanio 22" data-direccion="Av. Santa Fe 3200, CABA">
-                            <div class="hamburguesa-info">
-                                <h3>Titanio 22.</h3>
-                                <p>Av. Santa Fe 3200, CABA.</p>
-                                <p class="horario">Horario: 10:00 - 23:00</p>
-                                <p>Take Away y delivery.</p>
                             </div>
-                        </label>
-                        <label class="hamburguesa-card sucursal-card">
-                            <input type="radio" name="sucursal" class="sucursal-radio" value="Potasio 19" data-direccion="Av. Córdoba 4500 - CABA">
-                            <div class="hamburguesa-info">
-                                <h3>Potasio 19.</h3>
-                                <p>Av. Córdoba 4500 - CABA</p>
-                                <p class="horario">Horario: 10:00 - 23:00</p>
-                                <p>Take Away y delivery.</p>
+                        </div>
+                        
+                        <div class="hamburguesas-section mb-3 seccion-hamburguesas"> <!-- Contenedor de hamburguesas -->
+                            <h2 class="hamburguesas-title">HAMBURGUESAS</h2>
+                            
+                            <div class="hamburguesas-grid">
+                                <!-- Hamburguesa Card -->
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>La Carbono 14</h3>
+                                        <p class="descripcion">Hamburguesa con sabor explosivo: carne a la parrilla cargada de especias, queso cheddar derretido y cebolla caramelizada al carbón. </p>
+                                        <p class="precio">$8000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/carbonoo.jpeg" alt="La Carbono 14" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="8000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card"> 
+                                    <div class="hamburguesa-info">
+                                        <h3>La AtomicLab</h3>
+                                        <p class="descripcion">Hamburguesa doble a la parrilla, con queso cheddar radiactivo y panceta traída directa del reactor nuclear.</p>
+                                        <p class="precio">$9000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/bacon 2.jpeg" alt="La AtomicLab" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="9000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card"> 
+                                    <div class="hamburguesa-info">
+                                        <h3>La Kripton</h3>
+                                        <p class="descripcion">Hamburguesa concarne jugosa, doble queso suizo, bacon crujiente y una salsa verde radioactiva de jalapeños y mayonesa.</p>
+                                        <p class="precio">$9500</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/La Kripton.png" alt="La Kripton" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="9500" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card"> 
+                                    <div class="hamburguesa-info">
+                                        <h3>La Tritio</h3>
+                                        <p class="descripcion">Hamburguesa con tres capas de carne jugosa, queso cheddar y un toque de salsa especial de la casa que desata todo su sabor.</p>
+                                        <p class="precio">$10000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/La tritio.jpeg" alt="La Tritio" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="10000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </label>
-                        <label class="hamburguesa-card sucursal-card">
-                            <input type="radio" name="sucursal" class="sucursal-radio" value="Cesio 55" data-direccion="Av. Santa Fe 3200, CABA">
-                            <div class="hamburguesa-info">
-                                <h3>Cesio 55.</h3>
-                                <p>Av. Santa Fe 3200, CABA.</p>
-                                <p class="horario">Horario: 10:00 - 14:00 y 17:00 - 23:00</p>
-                                <p>Take Away y delivery.</p>
+                        </div>
+                        <div class="hamburguesas-section mb-3 seccion-sides"> <!-- Contenedor de acompañamientos -->
+                            <h2 class="hamburguesas-title">Sides/Acompañamientos</h2>
+                            
+                            <div class="hamburguesas-grid"> 
+                                <!-- Hamburguesa Card -->
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>Aros de Cebolla</h3>
+                                        <p class="precio">$4000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/arosCebolla.webp" alt="Aros de cebolla" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="4000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>Papas Fritas</h3>
+                                        <p class="precio">$2000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/Papas Fritas.jpeg" alt="Papas fritas" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="2000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>Especial papas con salsa Lab.</h3>
+                                        <p class="precio">$6000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/papasLab.jpeg" alt="PapasLab" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="6000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>Ensalada</h3>
+                                        <p class="precio">$3000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/ensalada.jpg" alt="Ensalada" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="3000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>Bastones de Mozzarella</h3>
+                                        <p class="precio">$6000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/bastonesMozzarella.jpeg" alt="bastonesMozzarella" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="6000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                    
                             </div>
-                        </label>
-                        <label class="hamburguesa-card sucursal-card">
-                            <input type="radio" name="sucursal" class="sucursal-radio" value="Francio 87" data-direccion="Av. Espora 1303 - Adrogué">
-                            <div class="hamburguesa-info">
-                                <h3>Francio 87.</h3>
-                                <p>Av. Espora 1303 - Adrogué</p>
-                                <p class="horario">Horario: 20:00 - 01:00</p>
-                                <p>Take Away y delivery.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6"> 
+                        <div class="hamburguesas-section mb-3 seccion-bebidas"> <!-- Contenedor de bebidas -->
+                            <h2 class="hamburguesas-title">Bebidas</h2>
+                            
+                            <div class="hamburguesas-grid">
+                                <!-- Hamburguesa Card -->
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>Agua mineral</h3>                 
+                                        <p class="precio">$1500</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/agua.png" alt="Agua mineral" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="1500" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>Gaseosa Lata</h3>                 
+                                        <p class="precio">$3500</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/gaseosa.png" alt="gaseosa" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="3500" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>Agua Saborizada</h3>                 
+                                        <p class="precio">$2000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/aguaSaborizada.png" alt="aguaSaborizada" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="2000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hamburguesa-card">
+                                    <div class="hamburguesa-info">
+                                        <h3>Cerveza</h3>                 
+                                        <p class="precio">$5000</p>
+                                    </div>
+                                    <div class="hamburguesa-controls">
+                                        <img src="img/cerveza.png" alt="cerveza" class="hamburguesa-img">
+                                        <div class="cantidad-control">
+                                            <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
+                                            <input type="number" class="cantidad-input" value="0" min="0" data-precio="5000" onchange="actualizarTotal()">
+                                            <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </label>
-            
+                        </div>
+
+                        <div class="hamburguesas-section mb-3"> <!-- Contenedor de tipo de entrega -->
+                            <h2 class="hamburguesas-title">Tipo de entrega</h2>
+                            
+                            <div class="hamburguesas-grid"> 
+                                <!-- Hamburguesa Card -->
+                                <label class="hamburguesa-card entrega-card">
+                                    <input type="radio" name="entrega" class="entrega-radio" value="Take Away">
+                                    <div class="hamburguesa-info">
+                                        <h3>Take Away</h3>
+                                    </div>
+                                </label>
+                                <label class="hamburguesa-card entrega-card">
+                                    <input type="radio" name="entrega" class="entrega-radio" value="Delivery">
+                                    <div class="hamburguesa-info">
+                                        <h3>Delivery</h3>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="hamburguesas-section mb-3"> <!-- Contenedor de medio de pago -->
+                            <h2 class="hamburguesas-title">Medio de pago</h2>
+                            
+                            <div class="hamburguesas-grid"> 
+                                <!-- Hamburguesa Card -->
+                                <label class="hamburguesa-card pago-card">
+                                    <input type="radio" name="pago" class="pago-radio" value="Efectivo">
+                                    <div class="hamburguesa-info">
+                                        <h3>Efectivo</h3>
+                                    </div>
+                                </label>
+                                <label class="hamburguesa-card pago-card">
+                                    <input type="radio" name="pago" class="pago-radio" value="Tarjeta">
+                                    <div class="hamburguesa-info">
+                                        <h3>Tarjeta</h3>
+                                    </div>
+                                </label>
+                                <label class="hamburguesa-card pago-card">
+                                    <input type="radio" name="pago" class="pago-radio" value="Transferencia">
+                                    <div class="hamburguesa-info">
+                                        <h3>Transferencia</h3>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <textarea class="form-control" placeholder="Notas para el pedido"></textarea>
                     </div>
                 </div>
-                
-                <div class="hamburguesas-section mb-3 seccion-hamburguesas"> <!-- Contenedor de hamburguesas -->
-                    <h2 class="hamburguesas-title">HAMBURGUESAS</h2>
-                    
-                    <div class="hamburguesas-grid">
-                        <!-- Hamburguesa Card -->
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>La Carbono 14</h3>
-                                <p class="descripcion">Hamburguesa con sabor explosivo: carne a la parrilla cargada de especias, queso cheddar derretido y cebolla caramelizada al carbón. </p>
-                                <p class="precio">$8000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/carbonoo.jpeg" alt="La Carbono 14" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="8000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
+            </section>
+            <section>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                        <div class="col-md-8">
+                            <h5>Resumen del Pedido</h5>
+                            <p>Hamburguesa/s: <span id="hamburguesa"></span></p>
+                            <p>Acompañamiento/s: <span id="side"></span></p>
+                            <p>Bebida/s: <span id="bebida"></span></p>
+                            <p>Sucursal: <span id="sucursal"></span></p>
+                            <p>Dirección: <span id="direccion"></span></p>
+                            <p>Tipo de entrega: <span id="entrega"></span></p>
+                            <p>Medio de Pago: <span id="pago"></span></p>
                         </div>
-                        <div class="hamburguesa-card"> 
-                            <div class="hamburguesa-info">
-                                <h3>La AtomicLab</h3>
-                                <p class="descripcion">Hamburguesa doble a la parrilla, con queso cheddar radiactivo y panceta traída directa del reactor nuclear.</p>
-                                <p class="precio">$9000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/bacon 2.jpeg" alt="La AtomicLab" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="9000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
+                        <div class="col-md-4">
+                            <h4 id="precio">Precio Total: <span>$0.00</span></h4>
+                            <p id="tiempo">Tiempo estimado: <span class="horario"> 40 minutos.</span></p>
                         </div>
-                        <div class="hamburguesa-card"> 
-                            <div class="hamburguesa-info">
-                                <h3>La Kripton</h3>
-                                <p class="descripcion">Hamburguesa concarne jugosa, doble queso suizo, bacon crujiente y una salsa verde radioactiva de jalapeños y mayonesa.</p>
-                                <p class="precio">$9500</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/La Kripton.png" alt="La Kripton" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="9500" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hamburguesa-card"> 
-                            <div class="hamburguesa-info">
-                                <h3>La Tritio</h3>
-                                <p class="descripcion">Hamburguesa con tres capas de carne jugosa, queso cheddar y un toque de salsa especial de la casa que desata todo su sabor.</p>
-                                <p class="precio">$10000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/La tritio.jpeg" alt="La Tritio" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="10000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="hamburguesas-section mb-3 seccion-sides"> <!-- Contenedor de acompañamientos -->
-                    <h2 class="hamburguesas-title">Sides/Acompañamientos</h2>
-                    
-                    <div class="hamburguesas-grid"> 
-                        <!-- Hamburguesa Card -->
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>Aros de Cebolla</h3>
-                                <p class="precio">$4000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/arosCebolla.webp" alt="Aros de cebolla" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="4000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>Papas Fritas</h3>
-                                <p class="precio">$2000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/Papas Fritas.jpeg" alt="Papas fritas" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="2000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>Especial papas con salsa Lab.</h3>
-                                <p class="precio">$6000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/papasLab.jpeg" alt="PapasLab" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="6000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>Ensalada</h3>
-                                <p class="precio">$3000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/ensalada.jpg" alt="Ensalada" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="3000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>Bastones de Mozzarella</h3>
-                                <p class="precio">$6000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/bastonesMozzarella.jpeg" alt="bastonesMozzarella" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="6000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-            
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col-md-6"> 
-                <div class="hamburguesas-section mb-3 seccion-bebidas"> <!-- Contenedor de bebidas -->
-                    <h2 class="hamburguesas-title">Bebidas</h2>
-                    
-                    <div class="hamburguesas-grid">
-                        <!-- Hamburguesa Card -->
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>Agua mineral</h3>                 
-                                <p class="precio">$1500</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/agua.png" alt="Agua mineral" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="1500" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>Gaseosa Lata</h3>                 
-                                <p class="precio">$3500</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/gaseosa.png" alt="gaseosa" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="3500" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>Agua Saborizada</h3>                 
-                                <p class="precio">$2000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/aguaSaborizada.png" alt="aguaSaborizada" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="2000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="hamburguesa-card">
-                            <div class="hamburguesa-info">
-                                <h3>Cerveza</h3>                 
-                                <p class="precio">$5000</p>
-                            </div>
-                            <div class="hamburguesa-controls">
-                                <img src="img/cerveza.png" alt="cerveza" class="hamburguesa-img">
-                                <div class="cantidad-control">
-                                    <button type="button" class="btn-cantidad" onclick="decrementarCantidad(this)">-</button>
-                                    <input type="number" class="cantidad-input" value="0" min="0" data-precio="5000" onchange="actualizarTotal()">
-                                    <button type="button" class="btn-cantidad" onclick="incrementarCantidad(this)">+</button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="hamburguesas-section mb-3"> <!-- Contenedor de tipo de entrega -->
-                    <h2 class="hamburguesas-title">Tipo de entrega</h2>
-                    
-                    <div class="hamburguesas-grid"> 
-                        <!-- Hamburguesa Card -->
-                        <label class="hamburguesa-card entrega-card">
-                            <input type="radio" name="entrega" class="entrega-radio" value="Take Away">
-                            <div class="hamburguesa-info">
-                                <h3>Take Away</h3>
-                            </div>
-                        </label>
-                        <label class="hamburguesa-card entrega-card">
-                            <input type="radio" name="entrega" class="entrega-radio" value="Delivery">
-                            <div class="hamburguesa-info">
-                                <h3>Delivery</h3>
-                            </div>
-                        </label>
-                    </div>
+                <!-- Botones -->
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="button" class="btn btn-secondary" onclick="location.reload()">Cancelar/Limpiar</button>
+                    <button type="submit" class="btn btn-primary me-md-2">Ordenar</button>
                 </div>
-
-                <div class="hamburguesas-section mb-3"> <!-- Contenedor de medio de pago -->
-                    <h2 class="hamburguesas-title">Medio de pago</h2>
-                    
-                    <div class="hamburguesas-grid"> 
-                        <!-- Hamburguesa Card -->
-                        <label class="hamburguesa-card pago-card">
-                            <input type="radio" name="pago" class="pago-radio" value="Efectivo">
-                            <div class="hamburguesa-info">
-                                <h3>Efectivo</h3>
-                            </div>
-                        </label>
-                        <label class="hamburguesa-card pago-card">
-                            <input type="radio" name="pago" class="pago-radio" value="Tarjeta">
-                            <div class="hamburguesa-info">
-                                <h3>Tarjeta</h3>
-                            </div>
-                        </label>
-                        <label class="hamburguesa-card pago-card">
-                            <input type="radio" name="pago" class="pago-radio" value="Transferencia">
-                            <div class="hamburguesa-info">
-                                <h3>Transferencia</h3>
-                            </div>
-                        </label>
-                    </div>
-                </div>
-
-                <textarea class="form-control" placeholder="Notas para el pedido"></textarea>
-            </div>
-
-            <div class="card mb-3">
-                <div class="card-body">
-                    <div class="row">
-                    <div class="col-md-8">
-                        <h5>Resumen del Pedido</h5>
-                        <p>Hamburguesa/s: <span id="hamburguesa"></span></p>
-                        <p>Acompañamiento/s: <span id="side"></span></p>
-                        <p>Bebida/s: <span id="bebida"></span></p>
-                        <p>Sucursal: <span id="sucursal"></span></p>
-                        <p>Dirección: <span id="direccion"></span></p>
-                        <p>Tipo de entrega: <span id="entrega"></span></p>
-                        <p>Medio de Pago: <span id="pago"></span></p>
-                    </div>
-                    <div class="col-md-4">
-                        <h4 id="precio">Precio Total: <span>$0.00</span></h4>
-                        <p id="tiempo">Tiempo estimado: </p>
-                    </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Botones -->
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-            <button type="reset" class="btn btn-secondary">Cancelar/Limpiar</button>
-            <button type="submit" class="btn btn-primary me-md-2">Ordenar</button>
-            </div>
+            </section>
         </form>
         </div>
     </main>
@@ -443,6 +447,7 @@
 
             // Actualizar el precio total
             precioSpan.textContent = `$${total.toLocaleString()}`;
+            precioSpan.className = 'horario';
         }
 
         // Manejador separado para sucursales
@@ -482,6 +487,13 @@
         window.decrementarCantidad = decrementarCantidad;
         window.incrementarCantidad = incrementarCantidad;
         window.actualizarTotal = actualizarTotal;
+
+        // Agregar el event listener para el formulario
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Pedido enviado!');
+            location.reload();
+        });
     });
     </script>
     <script src="js/navbar.js"></script>
