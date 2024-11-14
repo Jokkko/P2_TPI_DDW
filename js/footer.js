@@ -22,7 +22,7 @@ function renderFooter() {
       </p>
       `;
   
-    document.querySelector("footer").innerHTML = footerHTML;
+    document.querySelector("#footer").innerHTML = footerHTML;
   }
   
   document.addEventListener("DOMContentLoaded", renderFooter);
