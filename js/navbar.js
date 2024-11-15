@@ -3,7 +3,7 @@ function renderNavbar() {
       <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
           <div class="navbar-nav">
-            <a href="#link1">Reservá tu pedido</a>
+            <a href="../ordena_pedido.html">Reservá tu pedido</a>
             <a href="../menu.html">Menú</a>
             <a href="#link3">Sucursales</a>
             <a href="../faq.html">Conocenos</a>

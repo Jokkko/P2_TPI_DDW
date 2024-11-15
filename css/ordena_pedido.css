@@ -44,7 +44,7 @@ body {
     box-shadow: 0 0 15px rgba(242, 203, 64, 0.1);
   }
   
-  .card h5, .card-title {
+  .card h3, .card-title {
     color: #F2CB40 !important;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
@@ -326,7 +326,7 @@ body {
     cursor: pointer;
   }
 
-  .hamburguesa-info h3 {
+  .titulo{
     color: #F2CB40;
     font-size: 1.1rem;
     margin-bottom: 0.4rem;
@@ -345,6 +345,12 @@ body {
     font-size: 1.1rem;
     margin: 0;
   }
+  .hamburguesa-info h3 {
+    color: #F2CB40;
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+
 
   .hamburguesa-controls {
     display: flex;
@@ -497,3 +503,6 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
 
+.titulo-pedido{
+  display: none;
+}
