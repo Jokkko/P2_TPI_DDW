@@ -236,3 +236,6 @@
     height: 30px;
   }
 }
+.ciudad{
+  color: var(--third-color);
+}
