@@ -220,11 +220,11 @@
   }
 
   .hero__caption h1 {
-    font-size: 1.8rem;
+    font-size: 1rem;
   }
 
   .hero__caption .lead {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .gallery__carousel {
@@ -236,6 +236,6 @@
     height: 30px;
   }
 }
-.ciudad{
+.ciudad {
   color: var(--third-color);
 }
