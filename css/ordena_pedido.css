@@ -107,12 +107,12 @@ body {
   }
   
   ::-webkit-scrollbar-thumb {
-    background: #00FF12;
+    background: var(--secondary-color);
     border-radius: 4px;
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: #F2CB40;
+    background: var(--primary-color);
   }
   
   /* Responsive */
