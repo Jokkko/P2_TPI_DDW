@@ -8,7 +8,7 @@ function renderNavbar() {
             <a href="./sucursales.html">Sucursales</a>
             <a href="./faq.html">Conocenos</a>
           </div>
-          <a class="navbar-brand" href="../index.html">
+          <a class="navbar-brand" href="./index.html">
             <img src="./img/logo-chico.png" alt="Logo" style="height: 50px" />
               <span class="burger-text">Burger</span>
               <span class="lab-text">Lab</span>
