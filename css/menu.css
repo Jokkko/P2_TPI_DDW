@@ -13,6 +13,15 @@ body {
 }
 
 
+.hamburguesas-title {
+    background-color: #F2CB40;
+    color: #010F18;
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
 .burgers-section {
     padding: 20px;
 }
@@ -23,10 +32,7 @@ body {
     border: 2px solid #FF4500; 
     border-radius: 5px;
     padding: 15px;
-    margin: 10px auto 20px auto;
-    max-width: 80%;
     position: relative;
-    overflow: hidden;
 }
 
 .burger-item img, .accompaniment-item img, .drink-item img { 
@@ -83,3 +89,4 @@ ul.list-unstyled li::before {
     color: #FF4500; 
     margin-right: 0.5rem;
 }
+
