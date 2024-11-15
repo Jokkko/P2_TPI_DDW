@@ -3,10 +3,10 @@ function renderFooter() {
        <div class="footer-first-row">
         <img src="./img/logo-chico.png" alt="Logo" style="height: 70px" />
         <div class="footer-links">
-          <a href="../ordena_pedido.html">Reserva</a>
-          <a href="../menu.html">Mira nuestro Menu</a>
+          <a href="../ordena_pedido.html">Reservá</a>
+          <a href="../menu.html">Mirá nuestro Menú</a>
           <a href="../faq.html">FAQ</a>
-          <a href="#">Boton de arrepentimiento</a>
+          <a href="#">Botón de arrepentimiento</a>
         </div>
         <div class="footer-social">
           <a href="https://www.instagram.com"><img style="height: 35px;" src="svg/Instagram_white.svg" alt="Instagram"></a>
@@ -17,8 +17,8 @@ function renderFooter() {
       
       <p class="footer-copy">
         © 2024 BurgerLab. Todos los derechos reservados.
-        <a href="#">Politicas de privacidad</a> |
-        <a href="#">Terminos del servicio</a>
+        <a href="#">Políticas de privacidad</a> |
+        <a href="#">Términos del servicio</a>
       </p>
       <p class="footer-copy">
         Creado por <span class="span-creadores">Joaquin Fernandes, Ignacio Ramirez, Guido Contartese, Lucas Vitale y Andrea Celtich </span>
