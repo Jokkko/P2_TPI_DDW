@@ -68,12 +68,23 @@
   font-size: 1.75rem;
 }
 
-.location-card__image {
+@media (max-width: 992px) {
+  .location-card__image img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (min-width: 993px) {
+  .location-card__image  {
   position: relative;
   overflow: hidden;
   border-radius: 4px;
   margin-bottom: 1.5rem;
 }
+}
+
 
 .location-card__image img {
   transition: transform 0.3s ease;

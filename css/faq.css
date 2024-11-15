@@ -177,3 +177,51 @@ ul {
 ul {
   list-style: none;
 }
+
+.banner-contact {
+  text-align: center;
+  padding: 30px;
+}
+
+.banner-contact h2 {
+  font-size: 2.1em;
+  margin-bottom: 0px;
+  color: var(--primary-color);
+}
+
+form {
+  background-color: #0F0F11;
+  padding: 20px;
+  border-radius: 5px;
+  color: var(--primary-color);
+  margin-bottom: 5%;
+}
+
+.form-label {
+  color: var(--primary-color);
+}
+
+.form-control {
+  background-color: #1F1F1F;
+  border: 1px solid var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.form-control::placeholder {
+  color: var(--secondary-color);
+}
+
+.form-control:focus {
+  background-color: var(--bg-color);
+  color: var(--secondary-color);
+}
+
+.btn-custom {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+.btn-custom:hover {
+  background-color: #006400;
+  color: #fff;
+}
