@@ -1,3 +1,54 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.hero__figure {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.hero__image {
+  height: 90vh;
+  object-fit: cover;
+  filter: brightness(0.7);
+}
+
+.red-text{
+  color: var(--third-color);
+  text-decoration: none;
+}
+
+.hero__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  max-width: 800px;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.527);
+}
+
+.hero__caption h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--secondary-color);
+}
+
+.hero__caption .lead {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: var(--primary-color);
+}
+
 .cta-reserva {
     padding: 1rem;
     background-color: var(--bg-color); 
@@ -342,6 +393,9 @@
       font-size: 0.8rem;
     }
   
+    #title{
+      font-size: 2.3rem;
+    }
     .testimonios cite.nombre {
       font-size: 0.9rem;
     }

@@ -21,15 +21,27 @@
     </header>
 
     <main>
-      <div class="hero">
-        <figure>
+      
+      
+      <section class="hero">
+        <figure class="hero__figure m-0">
           <img
             src="img/HamburguesaDesdeArriba.webp"
             alt="Una hamburguesa vista desde arriba"
-            class="img-fluid"
+            class="hero__image img-fluid w-100"
+            loading="eager"
+            width="1920"
+            height="1080"
           />
+          <figcaption class="hero__caption">
+            <h1 id="title" class="display-4 mb-3">BurgerLab</h1>
+            <p class="lead">
+              Tu hamburguesa favorita siempre con nosotros.
+            </p>
+            <a href="#reserva" class="red-text">↓ Click aca para más ↓</a>
+          </figcaption>
         </figure>
-      </div>
+      </section>
 
       <section class="cta-reserva mx-5 my-4">
         <div class="card">
@@ -37,7 +49,7 @@
             class="card-body d-md-flex justify-content-around align-items-center"
           >
             <div class="reserva-content">
-              <h2>¡Reserva tu pedido ahora!</h2>
+              <h2 id="reserva">¡Reserva tu pedido ahora!</h2>
               <p>
                 Las mejores hamburguesas las conseguís con nosotros. Vení a
                 probar un sabor único.
