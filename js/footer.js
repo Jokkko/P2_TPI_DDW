@@ -3,9 +3,9 @@ function renderFooter() {
        <div class="footer-first-row">
         <img src="./img/logo-chico.png" alt="Logo" style="height: 70px" />
         <div class="footer-links">
-          <a href="../ordena_pedido.html">Reservá</a>
-          <a href="../menu.html">Mirá nuestro Menú</a>
-          <a href="../faq.html">FAQ</a>
+          <a href="./ordena_pedido.html">Reservá</a>
+          <a href="./menu.html">Mirá nuestro Menú</a>
+          <a href="./faq.html">FAQ</a>
           <a href="#">Botón de arrepentimiento</a>
         </div>
         <div class="footer-social">

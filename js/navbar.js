@@ -3,10 +3,10 @@ function renderNavbar() {
       <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container">
           <div class="navbar-nav">
-            <a href="../ordena_pedido.html">Reservá tu pedido</a>
-            <a href="../menu.html">Menú</a>
-            <a href="../sucursales.html">Sucursales</a>
-            <a href="../faq.html">Conocenos</a>
+            <a href="./ordena_pedido.html">Reservá tu pedido</a>
+            <a href="./menu.html">Menú</a>
+            <a href="./sucursales.html">Sucursales</a>
+            <a href="./faq.html">Conocenos</a>
           </div>
           <a class="navbar-brand" href="../index.html">
             <img src="./img/logo-chico.png" alt="Logo" style="height: 50px" />
