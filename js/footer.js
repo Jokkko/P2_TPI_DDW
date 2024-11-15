@@ -1,5 +1,5 @@
 function renderFooter() {
-    const footerHTML = `
+  const footerHTML = `
        <div class="footer-first-row">
         <img src="./img/logo-chico.png" alt="Logo" style="height: 70px" />
         <div class="footer-links">
@@ -21,11 +21,11 @@ function renderFooter() {
         <a href="#">Terminos del servicio</a>
       </p>
       <p class="footer-copy">
-        Creado por <span class="span-creadores">Joaquin Fernandes, Ignacio Ramirez, Guido Contartese, Lucas Vitale y Andrea </span>
+        Creado por <span class="span-creadores">Joaquin Fernandes, Ignacio Ramirez, Guido Contartese, Lucas Vitale y Andrea Celtich </span>
       </p>
       `;
-  
-    document.querySelector("#footer").innerHTML = footerHTML;
-  }
-  
-  document.addEventListener("DOMContentLoaded", renderFooter);
+
+  document.querySelector("#footer").innerHTML = footerHTML;
+}
+
+document.addEventListener("DOMContentLoaded", renderFooter);

@@ -25,7 +25,7 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-.marca{
+.marca {
   display: none;
 }
 
@@ -34,7 +34,7 @@ h6 {
   padding: 1rem 0;
   border-bottom: 2px solid var(--secondary-color);
 }
- 
+
 .navbar-custom .container {
   display: flex;
   justify-content: space-between;
@@ -45,7 +45,7 @@ h6 {
   max-width: none;
   position: relative;
 }
- 
+
 .navbar-nav {
   display: flex;
   align-items: center;
@@ -76,7 +76,7 @@ h6 {
 .navbar-brand .lab-text {
   font-weight: bold;
   color: var(--primary-color);
-} 
+}
 @media (max-width: 768px) {
   .navbar-custom .container {
     flex-direction: column;
@@ -100,7 +100,7 @@ h6 {
     font-size: 1.25rem;
   }
 }
- 
+
 @media (max-width: 480px) {
   .navbar-custom {
     padding: 0.5rem 0;
@@ -120,7 +120,6 @@ h6 {
     margin-bottom: 0.3rem;
   }
 }
-
 
 #footer {
   background-color: #000;
@@ -181,46 +180,46 @@ h6 {
 }
 
 /* Responsive */
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .footer-first-row {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
+
   .footer-links {
-      justify-content: center;
+    justify-content: center;
   }
-  
+
   .footer-social {
-      justify-content: center;
+    justify-content: center;
   }
-  
+
   .footer-copy {
-      font-size: 0.9em;
-      margin: 5px 0;
-      margin-right: 0;
+    font-size: 0.9em;
+    margin: 5px 0;
+    margin-right: 0;
   }
 }
- 
+
 @media (max-width: 480px) {
   .footer-first-row {
-      padding: 0 10px;
+    padding: 0 10px;
   }
 
   .footer-links {
-      flex-direction: column;
-      gap: 10px;
-      margin-bottom: 10px;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
   }
-  
+
   .footer-social {
-      gap: 10px;
-      margin-top: 10px;
+    gap: 10px;
+    margin-top: 10px;
   }
 
   .footer-copy {
-      font-size: 0.8em;
-      margin: 5px 0;
+    font-size: 0.8em;
+    margin: 5px 0;
   }
 }

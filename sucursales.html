@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Encuentra tu Burger Lab más cercano. Presentes en 9 de Julio, Córdoba, Adrogué, Santa Fe y próximamente en Miami"
+    />
+    <meta
+      name="keywords"
+      content="Burger Lab, hamburguesas, sucursales, 9 de Julio, Córdoba, Adrogué, Santa Fe, Miami"
+    />
+    <title>Burger Lab - Nuestras Sucursales</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/sucursales.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-label="Navegación principal"></nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Banner principal">
+        <figure class="hero__figure m-0">
+          <img
+            src="img/SucursalMiami.webp"
+            alt="Vista exterior de nuestra próxima sucursal en Miami"
+            class="hero__image img-fluid w-100"
+            loading="eager"
+            width="1920"
+            height="1080"
+          />
+          <figcaption class="hero__caption">
+            <h1 class="display-4 mb-3">Nuestras Sucursales</h1>
+            <p class="lead">
+              Tu hamburguesa favorita te espera en 9 de Julio, Córdoba, Adrogué,
+              Santa Fe y próximamente en Miami
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section
+        class="locations container my-5"
+        aria-label="Listado de sucursales"
+      >
+        <h2 class="visually-hidden">Nuestras Ubicaciones</h2>
+        <div class="row g-4">
+          <article
+            class="col-md-6"
+            itemscope
+            itemtype="https://schema.org/Restaurant"
+          >
+            <div class="location-card">
+              <h3 class="location-card__title" itemprop="name">9 de Julio</h3>
+              <div class="location-card__image">
+                <img
+                  src="img/Sucursal9Julio.webp"
+                  alt="Fachada del local en 9 de Julio"
+                  class="img-fluid w-100"
+                  loading="lazy"
+                  width="800"
+                  height="600"
+                  itemprop="image"
+                />
+              </div>
+              <button
+                class="btn btn-primary location-card__btn"
+                aria-label="Ver dirección de sucursal 9 de Julio"
+              >
+                Dirección
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="col-md-6"
+            itemscope
+            itemtype="https://schema.org/Restaurant"
+          >
+            <div class="location-card">
+              <h3 class="location-card__title" itemprop="name">Córdoba</h3>
+              <div class="location-card__image">
+                <img
+                  src="img/SucursalCordoba.webp"
+                  alt="Fachada del local en Córdoba"
+                  class="img-fluid w-100"
+                  loading="lazy"
+                  width="800"
+                  height="600"
+                  itemprop="image"
+                />
+              </div>
+              <button
+                class="btn btn-primary location-card__btn"
+                aria-label="Ver dirección de sucursal Córdoba"
+              >
+                Dirección
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="col-md-6"
+            itemscope
+            itemtype="https://schema.org/Restaurant"
+          >
+            <div class="location-card">
+              <h3 class="location-card__title" itemprop="name">Adrogué</h3>
+              <div class="location-card__image">
+                <img
+                  src="img/SucursalAdrogue.webp"
+                  alt="Fachada del local en Adrogué"
+                  class="img-fluid w-100"
+                  loading="lazy"
+                  width="800"
+                  height="600"
+                  itemprop="image"
+                />
+              </div>
+              <button
+                class="btn btn-primary location-card__btn"
+                aria-label="Ver dirección de sucursal Adrogué"
+              >
+                Dirección
+              </button>
+            </div>
+          </article>
+
+          <article
+            class="col-md-6"
+            itemscope
+            itemtype="https://schema.org/Restaurant"
+          >
+            <div class="location-card">
+              <h3 class="location-card__title" itemprop="name">Santa Fe</h3>
+              <div class="location-card__image">
+                <img
+                  src="img/SucursalSantaFe.webp"
+                  alt="Fachada del local en Santa Fe"
+                  class="img-fluid w-100"
+                  loading="lazy"
+                  width="800"
+                  height="600"
+                  itemprop="image"
+                />
+              </div>
+              <button
+                class="btn btn-primary location-card__btn"
+                aria-label="Ver dirección de sucursal Santa Fe"
+              >
+                Dirección
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="gallery container-fluid px-0 mb-5"
+        aria-label="Galería de imágenes"
+      >
+        <h2 class="text-center mb-4">Galería de Nuestros Locales</h2>
+        <div
+          class="owl-carousel owl-theme gallery__carousel"
+          aria-label="Carrusel de imágenes de locales"
+        >
+          <figure class="gallery__item">
+            <img
+              src="img/SucursalMiami.webp"
+              alt="Vista interior del local mostrando el área de comedor"
+              class="gallery__image"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/SucursalAdrogue.webp"
+              alt="Área de la barra y preparación de bebidas"
+              class="gallery__image"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/Sucursal9Julio.webp"
+              alt="Vista de la cocina abierta donde se preparan las hamburguesas"
+              class="gallery__image"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/SucursalSantaFe.webp"
+              alt="Área exterior con mesas al aire libre"
+              class="gallery__image"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </figure>
+          <figure class="gallery__item">
+            <img
+              src="img/SucursalCordoba.webp"
+              alt="Detalle de la decoración interior del local"
+              class="gallery__image"
+              loading="lazy"
+              width="800"
+              height="600"
+            />
+          </figure>
+        </div>
+        #
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/carousel.js"></script>
+  </body>
+</html>
